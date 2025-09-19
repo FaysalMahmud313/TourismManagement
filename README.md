@@ -33,7 +33,7 @@ ABOUT US
 ![image](https://github.com/FaysalMahmud313/TourismManagement/blob/master/Tourism%20About%20us%20frame.png?raw=true)
 LOG-IN 
 ![image](https://github.com/FaysalMahmud313/TourismManagement/blob/master/3.png?raw=true)
-FORGET PASSWORD
+FORGET-PASSWORD
 ![image](https://github.com/FaysalMahmud313/TourismManagement/blob/master/4.png?raw=true)
 REGISTRATION
 ![image](https://github.com/FaysalMahmud313/TourismManagement/blob/master/5.png?raw=true)
