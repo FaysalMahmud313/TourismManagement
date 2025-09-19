@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{088C72CB-027B-418E-BEC9-6EE5DF6E24BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TourismManagement</RootNamespace>
+    <AssemblyName>TourismManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutUs.Designer.cs">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddAdmin.Designer.cs">
+      <DependentUpon>frmAddAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddHotel.Designer.cs">
+      <DependentUpon>frmAddHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddVehicle.Designer.cs">
+      <DependentUpon>frmAddVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBankPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBankPayment.Designer.cs">
+      <DependentUpon>frmBankPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBkashNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBkashNumber.Designer.cs">
+      <DependentUpon>frmBkashNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBkashOtp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBkashOtp.Designer.cs">
+      <DependentUpon>frmBkashOtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBkashPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBkashPayment.Designer.cs">
+      <DependentUpon>frmBkashPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBkashPin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBkashPin.Designer.cs">
+      <DependentUpon>frmBkashPin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompanyEarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompanyEarning.Designer.cs">
+      <DependentUpon>frmCompanyEarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomPackage.Designer.cs">
+      <DependentUpon>frmCustomPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFlight.Designer.cs">
+      <DependentUpon>frmFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlightView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFlightView.Designer.cs">
+      <DependentUpon>frmFlightView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgetPassword.Designer.cs">
+      <DependentUpon>frmForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotel.Designer.cs">
+      <DependentUpon>frmHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotelView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotelView.Designer.cs">
+      <DependentUpon>frmHotelView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNagadOtp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNagadOtp.Designer.cs">
+      <DependentUpon>frmNagadOtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNagadPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNagadPayment.Designer.cs">
+      <DependentUpon>frmNagadPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNagadPin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNagadPin.Designer.cs">
+      <DependentUpon>frmNagadPin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNagodNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNagodNumber.Designer.cs">
+      <DependentUpon>frmNagodNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPackage.Designer.cs">
+      <DependentUpon>frmPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPastEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPastEvents.Designer.cs">
+      <DependentUpon>frmPastEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentMethod.Designer.cs">
+      <DependentUpon>frmPaymentMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentRegistration.Designer.cs">
+      <DependentUpon>frmPaymentRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReview.Designer.cs">
+      <DependentUpon>frmReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServices.Designer.cs">
+      <DependentUpon>frmServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraveler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraveler.Designer.cs">
+      <DependentUpon>frmTraveler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelerDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelerDashBoard.Designer.cs">
+      <DependentUpon>frmTravelerDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelerPaymentAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelerPaymentAdmin.Designer.cs">
+      <DependentUpon>frmTravelerPaymentAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelerRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelerRegister.Designer.cs">
+      <DependentUpon>frmTravelerRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelerUpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelerUpdateProfile.Designer.cs">
+      <DependentUpon>frmTravelerUpdateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpcomingEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpcomingEvent.Designer.cs">
+      <DependentUpon>frmUpcomingEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserList.Designer.cs">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVehicle.Designer.cs">
+      <DependentUpon>frmVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehicleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVehicleView.Designer.cs">
+      <DependentUpon>frmVehicleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendorDashBoard.Designer.cs">
+      <DependentUpon>frmVendorDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendorFlight.Designer.cs">
+      <DependentUpon>frmVendorFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorRting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendorRting.Designer.cs">
+      <DependentUpon>frmVendorRting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorServiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendorServiceList.Designer.cs">
+      <DependentUpon>frmVendorServiceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorValidation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendorValidation.Designer.cs">
+      <DependentUpon>frmVendorValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendorVehicle.Designer.cs">
+      <DependentUpon>frmVendorVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorWallet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendorWallet.Designer.cs">
+      <DependentUpon>frmVendorWallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gifMassageBox.cs" />
+    <Compile Include="PaymentHandler.cs" />
+    <Compile Include="PrepareBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrepareBill.Designer.cs">
+      <DependentUpon>PrepareBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendEmail.cs" />
+    <Compile Include="ServiceBooking.cs" />
+    <EmbeddedResource Include="frmAboutUs.resx">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddAdmin.resx">
+      <DependentUpon>frmAddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddHotel.resx">
+      <DependentUpon>frmAddHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddVehicle.resx">
+      <DependentUpon>frmAddVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBankPayment.resx">
+      <DependentUpon>frmBankPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBkashNumber.resx">
+      <DependentUpon>frmBkashNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBkashOtp.resx">
+      <DependentUpon>frmBkashOtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBkashPayment.resx">
+      <DependentUpon>frmBkashPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBkashPin.resx">
+      <DependentUpon>frmBkashPin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompanyEarning.resx">
+      <DependentUpon>frmCompanyEarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomPackage.resx">
+      <DependentUpon>frmCustomPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFlight.resx">
+      <DependentUpon>frmFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFlightView.resx">
+      <DependentUpon>frmFlightView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgetPassword.resx">
+      <DependentUpon>frmForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHotel.resx">
+      <DependentUpon>frmHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHotelView.resx">
+      <DependentUpon>frmHotelView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNagadOtp.resx">
+      <DependentUpon>frmNagadOtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNagadPayment.resx">
+      <DependentUpon>frmNagadPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNagadPin.resx">
+      <DependentUpon>frmNagadPin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNagodNumber.resx">
+      <DependentUpon>frmNagodNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPackage.resx">
+      <DependentUpon>frmPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPastEvents.resx">
+      <DependentUpon>frmPastEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentMethod.resx">
+      <DependentUpon>frmPaymentMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentRegistration.resx">
+      <DependentUpon>frmPaymentRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReview.resx">
+      <DependentUpon>frmReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServices.resx">
+      <DependentUpon>frmServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraveler.resx">
+      <DependentUpon>frmTraveler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelerDashBoard.resx">
+      <DependentUpon>frmTravelerDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelerPaymentAdmin.resx">
+      <DependentUpon>frmTravelerPaymentAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelerRegister.resx">
+      <DependentUpon>frmTravelerRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelerUpdateProfile.resx">
+      <DependentUpon>frmTravelerUpdateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpcomingEvent.resx">
+      <DependentUpon>frmUpcomingEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserList.resx">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicle.resx">
+      <DependentUpon>frmVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicleView.resx">
+      <DependentUpon>frmVehicleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorDashBoard.resx">
+      <DependentUpon>frmVendorDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorFlight.resx">
+      <DependentUpon>frmVendorFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorRting.resx">
+      <DependentUpon>frmVendorRting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorServiceList.resx">
+      <DependentUpon>frmVendorServiceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorValidation.resx">
+      <DependentUpon>frmVendorValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorVehicle.resx">
+      <DependentUpon>frmVendorVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorWallet.resx">
+      <DependentUpon>frmVendorWallet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrepareBill.resx">
+      <DependentUpon>PrepareBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Services.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TourPackage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traveler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userfrm.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vendor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wayicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_help-252.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_services %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-airplane-icon-1755-thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPlane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-icon-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotelfrm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TourPackage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-icon-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-button-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book-Now-PNG-Photos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane direction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-button-cart-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-button-cart-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add to cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forgot Password.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Send btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkash_payment_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkashcart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkash-logo-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nagad-Logo.wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1725618513nagad-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropshipping-bank-transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register-Button-PNG-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Headphones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marchent_Payment-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tourism About us frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userframeBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new small size.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
