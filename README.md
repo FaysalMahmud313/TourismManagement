@@ -24,3 +24,6 @@ Make bookings and confirm reservations.
 Receive automatically generated bills and invoices via email.
 Secure payment options (bank transfers, mobile banking).
 Submit reviews and feedback on travel experiences.
+
+SCHEMA DIAGRAM
+![image](https://github.com/FaysalMahmud313/TourismManagement/blob/master/Drawing%203%20-%20Copy%20(1)%20-%20Copy%20(1).jpeg?raw=true)
