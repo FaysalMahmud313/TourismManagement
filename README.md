@@ -1,10 +1,6 @@
 # TourismManagement
 LOG-IN CREDENTIALS:
-User Type                        ID               Password 
-Admin                          A3160               2427 
-Vendor(Airline)                VA7900              2427
-Vendor(Hotel)                  VH9298              2427
-Traveler                       T9467               2427
+User Type - ADMIN(ID: A3160. Password: 2427); Vendor Airline(ID: VA7900. Password: 2427); Vendor Hotel(ID: VH9298. Password: 2427); Traveler(ID: T9467. Password: 2427) 
 
 CASE STUDY:
 
